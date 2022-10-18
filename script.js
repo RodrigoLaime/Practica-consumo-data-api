@@ -22,7 +22,7 @@ async function loadUsers() {
 }
 
 
-const createUserItems = users => users.map(user => `<li class="bg-zinc-800 hover:bg-zinc-700 hover:cursor-pointer">${user.firstname} ${user.lastname}</li>`).join(' ')
+const createUserItems = users => users.map(user => `<li class="lista">${user.firstname} ${user.lastname}</li>`).join(' ')
 
 function renderUsers(users) {
   const itemsString = createUserItems(users)
